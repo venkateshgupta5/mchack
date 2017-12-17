@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 p {
@@ -348,12 +348,13 @@ ul li {
 }
 .site-header .intro h2 {
   margin-top: 0px;
-  font-size: 25px;
+  font-size: 50px;
+  font-family: helvetica;
   font-weight: 300;
 }
 .site-header .intro h1 {
   margin-top: 0px;
-  font-size: 30px;
+  font-size: 65px;
 }
 .site-header .intro p {
   font-size: 20px;
@@ -469,7 +470,7 @@ ul li {
   opacity: 1;
 }
 .partner .partner-box-1 {
-  background: url(../images/partner/partner-1.png) no-repeat center center/contain;
+  background: url(../images/partner/jetbrains.svg) no-repeat center center/contain;
 }
 .partner .partner-box-2 {
   background: url(../images/partner/partner-2.png) no-repeat center center/contain;
