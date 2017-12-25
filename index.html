@@ -42,8 +42,8 @@
                     <!-- navigation menu -->
                     <li class="active"><a data-scroll href="#about">About</a></li>             
                     <li><a data-scroll href="#schedule">Schedule</a></li>                  
-                    <li><a data-scroll href="#partner">Partners</a></li>                  
-                    <li><a data-scroll href="#"> Team </a></li>
+                    <li><a data-scroll href="#partner">Partners</a></li>
+                     <li><a data-scroll href="#theme"> Themes </a></li>                  
                     <li><a data-scroll href="#faq">FAQ</a></li>
              <!--        <li><a data-scroll href="#photos">Gallery</a></li> -->
                 
@@ -62,12 +62,20 @@
             <h2>3 - 4th Feb, 2018 </h2>
             
             <p>Where Creativity has no limit.</p>
+            <br>
             
-            <a class="btn btn-white" href="">Registrations will begin shortly. </a>
+            <a class="btn btn-white" href="">Registrations starting from 27 dec. </a>
 
+            </br></br></br>
+
+            <p id="demo"></p>
        <!--  https://goo.gl/8x2NgT
  -->        </div>
+
     </header>
+
+
+
 
     <section id="about" class="section about">
         <div class="container">
@@ -82,7 +90,7 @@
 
                         <p>
                     <figure>
-                        <img alt="" class="img-responsive" src="assets/images/cover.jpeg">
+                        <img alt="" class="img-responsive" src="assets/images/poster_b.png">
                     </figure>
 
                 </div><!-- /.col-sm-6 -->
@@ -108,6 +116,30 @@
                 </div><!-- /.col-sm-6 -->
             </div><!-- /.row -->
         </div><!-- /.container -->
+    </section>
+
+    
+    <section id="theme" class="section theme">
+        <div class="container">
+            
+            <h2>THEMES : </h1>
+            <p>
+            <ul>
+                    <li> Smart Cities </li><br>
+
+                    <li> Healthcare and Family Welfare</li><br>
+                    
+                    <li> Security </li><br>
+                    
+                    <li> Hospitality </li><br>
+
+                    <li>Others</li>
+                </ul>
+            </p>
+
+           
+        
+        </div><!-- container -->
     </section>
 
     <section id="facts" class="section bg-image-1 facts text-center">
@@ -140,7 +172,9 @@
             </div><!-- row -->
         </div><!-- container -->
     </section>
-  
+
+
+
     <section id="schedule" class="section schedule">
         <div class="container">
             <div class="row">
@@ -170,7 +204,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
-                            <time datetime="10:00">1:30</time> - <time datetime="22:00">2:30 am</time>
+                            <time datetime="10:00">1:30</time> - <time datetime="22:00">2:30 pm</time>
                         </div>
                         <h3>Lunch</h3>
                     </div>
@@ -385,6 +419,7 @@
                             </div>
                         </div>
 
+
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingFive">
                                 <h4 class="panel-title">
@@ -485,6 +520,37 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 3, 2018 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + " days" + " Remaining" ;
+            
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+</script>
+
 
     <!-- script -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

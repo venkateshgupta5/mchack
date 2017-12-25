@@ -1,3 +1,9 @@
+
+
+p#demo{
+  font-size: 40px;
+  font-family: system-ui;
+}
 /* 
  * 1. Google Font
  */
@@ -322,7 +328,7 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
+  background: url(../images/backgrounds/lap2.jpg) no-repeat center center/cover;
   display: table;
 }
 .site-header::before {
@@ -358,6 +364,11 @@ ul li {
 }
 .site-header .intro p {
   font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.site-header .intro p #id{
+  font-size: 400px;
   margin-bottom: 10px;
   font-weight: 300;
 }
@@ -427,7 +438,7 @@ ul li {
  */
 .contribution {
   text-align: center;
-  color: #fff;
+  co ;.c                                                                                                                                                                                                                                                                                                                                                                                                                                                                      hg             lor: #fff;
 }
 
 /* 
@@ -457,6 +468,10 @@ ul li {
 .partner {
   background-color: #f8f8f8;
 }
+
+.theme {
+  background-color: #f4f2f2;
+}
 .partner .partner-box {
   display: block;
   opacity: 0.75H;
@@ -478,6 +493,11 @@ ul li {
 .partner .partner-box-1 {
   background: url(../images/partner/mstc.jpg) no-repeat center center/contain;
 }
+.partner .partner-box-4 {
+  background: url(../images/partner/skillenza_log.png) no-repeat center center/contain;
+}
+
+
 
 
 /* 
